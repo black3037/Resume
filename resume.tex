@@ -1,0 +1,159 @@
+\documentclass[8pt,letterpaper,oneside]{article}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{tabu}
+\usepackage{enumitem}
+\usepackage[normalem]{ulem}
+
+\newcommand{\longunderline}[1]{\uline{#1\hfill\mbox{}}}
+a
+ 
+% setup itemize item styles
+\setitemize{label={}, leftmargin=*, nolistsep, align=left, afterlabel={}}
+
+
+% Margin setup
+\setlength{\voffset}{0.1in}
+\setlength{\paperwidth}{8.5in}
+\setlength{\paperheight}{11in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0.3in}
+\setlength{\textheight}{11in}
+\setlength{\textheight}{9.5in}
+\setlength{\topmargin}{-0.8in}
+\setlength{\textwidth}{8.1in}
+\setlength{\topskip}{0in}
+\setlength{\oddsidemargin}{-0.8in}
+\setlength{\evensidemargin}{-0.25in}
+\setlength{\footskip}{-0.4in}
+
+% Custom commands
+\newcommand{\sectionhead}[1]{ \large \flushleft \longunderline{\textbf{#1}}} % Section headings
+\newcommand{\sectionitems}{ \small} % Section items
+
+% Begin printed content
+
+% Apply heading to the document
+% Include: Name, Address, Phone number
+% and general contect info. This document
+% will use the fancyhdr package.
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt} % Remove default line from header
+\rhead{\textbf{\large{derekblackj@gmail.com}}}
+\chead{\textbf{\huge{Derek J. Black}}}
+\lhead{\textbf{\large{(785) 432-0777}}}
+\rfoot{Resume made with \LaTeX}
+
+% Begin document: Resume.tex
+\begin{document}
+
+    % Social media links
+    \begin{center}
+        \begin{tabular}{ c c c }
+            \textbf{GitHub:} \href{https:\\github.com/black3037}{github.com/black3037} & \textbf{Website:} mywebsite.com & \textbf{Linkedin:} \href{https:\\linkedin.com/in/derekblack/}{linkedin.com/in/derekblack/}
+        \end{tabular}
+    \end{center}
+
+    % Technical Compentencies
+    \sectionhead{TECHNICAL COMPENTENCY}
+        \begin{sectionitems}
+            \begin{itemize}
+                \setlength\itemsep{0.1em}
+                \setlength{\itemindent}{-0.4em}
+                \item \textbf{Programming Langugages:} MATLAB, Simulink, Python, Javascript, \LaTeX, C, VBA, Fortran
+                \item \textbf{Frameworks:} React, Vehicle Network Toolbox, Bootstrap
+                \item \textbf{Software:} Microsoft Office Suite, CANape, CANKing
+                \item \textbf{Design:} Adobe Photoshop, Figma
+                \item \textbf{Protocols:} USART, CAN (J1939, CANopen)
+                \item \textbf{Computer Aided Design:} Solidworks, DraftSight
+                \item \textbf{Other:} HTML, CSS, JSON, XML
+            \end{itemize}
+        \end{sectionitems}
+
+    % Experience
+    % Begin experience section 1 heading
+    \sectionhead{EXPERIENCE}
+    \newline
+    \normalsize{\textbf{Altec Industries, Inc.}}
+    \hfill
+    August 2017 - Present
+    \newline
+    \normalsize{\textbf{Controls Developer}}
+    % Experience section 1 content
+    \begin{sectionitems}
+        \begin{itemize}
+            \setlength\itemsep{0.1em}
+            \setlength{\itemindent}{-0.4em}
+            \item \textit{Advanced Development}
+            \subitem Developed and deployed sensor apparatus with 32+ individual sensors (flow meters, pressure/temperature transducers, LVDTs, string pots, quadrature and absolute encoders) to fully characterize the dynamics of a 38 ton crane.
+            \subitem Processed, filtered, and logged data of various source types (CAN, analog, digital) to a logger for further post-processing using MATLAB.
+            \subitem Developed full control system to effectively control all functions of the unit (boom, winch, rotate, telescope) with runtime adjustable parameters to fine tune performance
+            \subitem Developed webpages to allow other engineers to interface with the unit to allow runtime adjustment of parameters and view of sensor data in realtime via a CCP interface.
+            \subitem Deployed MATLAB GUIs utilizing an MVC architecture that automatically imported collected data, generated publication quality figures and graphs, and calculated performance characteristics (hysteresis, min/max function speed, etc) for reporting and analysis by other engineers.
+            \subitem Developed new rotation algorithms that can reduce boom oscillation and investigate the potential for integration in future crane products.
+            \item \textit{DT105}
+            \subitem Designed and developed production software targeting 105 foot digger derrick with advance controls to support new features such as a cab with ability to tilt up/down and new CAN based joysticks and keypads
+            \subitem Developed webpages that allow plant technicians, customers, and manufacturing engineers to view important diagnostic information about the unit, and the ability to adjust runtime parameters for system performance improvements.
+            \item \textit{D3000E}
+            \subitem asdfasdf
+            \subitem asdfasdf
+            \subitem asdfasdf
+            \subitem asdfasdf
+            \subitem asdfasdf
+            \item \textbf{Software:}
+            \item \textit{Toolbox Manager}
+            \subitem  asdjfkla;sdfjl
+            \subitem ajsdfkl;afjkl
+            \item \textit{Signal Generator}
+            \subitem asdjfkla;sdfjl
+            \subitem ajsdfkl;afjkl
+        \end{itemize}
+    \end{sectionitems}
+
+    % Begin experience section 2 heading
+    \normalsize{\textbf{Kansas State University}}
+    \hfill
+    August 2017 - Present
+    \newline
+    \normalsize{\textbf{Lab Instructor}}
+    % Experience section 2 content
+    \begin{sectionitems}
+        \begin{itemize}
+            \setlength\itemsep{0.1em}
+            \setlength{\itemindent}{-0.4em}
+            \item Prepared and delivered lab lectures to a class of 30+ students.
+            \item Lead exam review sessions by creating practice exams and lectures to aid students in upcoming examinations.
+            \item Provided student feedback on laboratory hardware/software and how to perform appropriate practical analysis of experiments on the laboratory hardware.
+            \item Held office hours and graded laboratory reports/homewok for a class of 90+ students.
+        \end{itemize}
+    \end{sectionitems}
+
+
+    % Projects
+    \sectionhead{PROJECTS}
+
+    % Education
+    \sectionhead{EDUCATION}
+        \newline
+        \small{\textbf{Kansas State University}}
+        \hfill
+        Manhattan, KS\\
+        \small{\textbf{Master of Science, Engineering}}
+        \hfill
+        May 2017
+        \newline
+        \textit{Focus:} Mechatronics, Control Theory
+        \newline
+        \textit{Thesis:} Development and feasibility of economical hardware and software in control theory application
+        \newline
+        \href{http://hdl.handle.net/2097/38170}{http://hdl.handle.net/2097/38170}
+        \newline
+        \newline
+        \small{\textbf{Kansas State University}}
+        \hfill
+        Manhattan, KS\\
+        \small{\textbf{Bachelor of Science, Mechanical Engineering}}
+        \hfill
+        December 2014
+\end{document}
